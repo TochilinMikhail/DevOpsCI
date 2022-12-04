@@ -3,7 +3,7 @@ from pathlib import Path
 
 from setuptools import setup
 
-NAME = 'enhancer'
+NAME = 'enhancer_toch'
 DESCRIPTION = (
     'Speech enhancement in the waveform domain.'
     ' Supports offline and streaming evaluation.'
