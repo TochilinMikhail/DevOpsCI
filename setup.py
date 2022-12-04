@@ -55,8 +55,6 @@ setup(
     include_package_data=True,
     license='Public Domain',
     classifiers=[
-        # Trove classifiers
-        # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
         'Topic :: Multimedia :: Sound/Audio :: Speech',
         'Topic :: Scientific/Engineering :: Artificial Intelligence',
     ],
