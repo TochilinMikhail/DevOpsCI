@@ -54,4 +54,4 @@ jobs:
       with:
         name: python-package-3.7-ubuntu-latest
         path: dist/*.whl
-        retention-days: 2
+        retention-days: 10
