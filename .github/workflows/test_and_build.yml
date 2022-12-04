@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 
 jobs:
-  test_and_build:
+  test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -31,6 +31,19 @@ jobs:
         sh make_debug.sh
         python train.py num_workers=0 device=cpu epochs=1 dset.test= demucs.hidden=1 demucs.depth=3	
     
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -U .
+
     - name: Build package
       run: |
         python setup.py bdist_wheel
