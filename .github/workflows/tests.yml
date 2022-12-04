@@ -21,10 +21,10 @@ jobs:
 
     - name: Demucs benchmark
       run: |
-        python -m denoiser.demucs
+        python -m enhancer_toch.demucs
         
     - name: enhance
-      run: python -m denoiser.enhance --dns48 --noisy_dir dataset/debug/noisy/
+      run: python -m enhancer_toch.enhance --dns48 --noisy_dir dataset/debug/noisy/
   
     - name: Dummy Training
       run: |	
@@ -45,5 +45,5 @@ jobs:
         pip install -U .
 
     - name: enhance
-      run: python -m denoiser.enhance --dns48 --noisy_dir dataset/debug/noisy/
+      run: python -m enhancer_toch.enhance --dns48 --noisy_dir dataset/debug/noisy/
   

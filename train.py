@@ -11,7 +11,7 @@ import os
 
 import hydra
 
-from denoiser.executor import start_ddp_workers
+from enhancer_toch.executor import start_ddp_workers
 
 logger = logging.getLogger(__name__)
 
@@ -19,10 +19,10 @@ logger = logging.getLogger(__name__)
 def run(args):
     import torch
 
-    from denoiser import distrib
-    from denoiser.data import NoisyCleanSet
-    from denoiser.demucs import Demucs
-    from denoiser.solver import Solver
+    from enhancer_toch import distrib
+    from enhancer_toch.data import NoisyCleanSet
+    from enhancer_toch.demucs import Demucs
+    from enhancer_toch.solver import Solver
     distrib.init(args)
 
     # torch also initialize cuda seed if available

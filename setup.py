@@ -13,7 +13,7 @@ URL = 'https://github.com/mikhailTochilin/DevOpsCI'
 EMAIL = 'tochilin.mi@phystech.edu'
 AUTHOR = 'Tochilin Mikhail'
 REQUIRES_PYTHON = '>=3.7.0'
-VERSION = "0.1.5"
+VERSION = "0.1.0"
 
 HERE = Path(__file__).parent
 
@@ -49,7 +49,7 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    packages=['denoiser'],
+    packages=['enhancer_toch'],
     install_requires=REQUIRED,
     dependency_link=REQUIRED_LINKS,
     include_package_data=True,
