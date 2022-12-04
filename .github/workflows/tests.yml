@@ -28,6 +28,7 @@ jobs:
   
     - name: Test Training
       run: |	
+        sh make_debug.sh
         python train.py num_workers=0 device=cpu epochs=1 dset.test= demucs.hidden=1 demucs.depth=3	
     
     - name: Build package
