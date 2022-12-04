@@ -9,8 +9,8 @@ DESCRIPTION = (
     ' Supports offline and streaming evaluation.'
     ' For training, please directly clone the github repository.')
 
-URL = 'https://github.com/TochilinMikhail/DevOpsCI'
-EMAIL = 'mi.tochilin@gmail.com'
+URL = 'https://github.com/mikhailTochilin/DevOpsCI'
+EMAIL = 'tochilin.mi@phystech.edu'
 AUTHOR = 'Tochilin Mikhail'
 REQUIRES_PYTHON = '>=3.7.0'
 VERSION = "0.1.5"
@@ -49,7 +49,7 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    packages=['enhancer'],
+    packages=['denoiser'],
     install_requires=REQUIRED,
     dependency_link=REQUIRED_LINKS,
     include_package_data=True,
