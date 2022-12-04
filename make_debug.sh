@@ -2,6 +2,7 @@
 
 
 path=egs/debug/tr
+
 if [[ ! -e $path ]]; then
     mkdir -p $path
 fi
